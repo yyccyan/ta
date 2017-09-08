@@ -1,0 +1,94 @@
+/**
+ * Frosted glass effect
+ */
+
+
+
+body, main::before {
+
+background: linear-gradient(#ffffff 50%, rgba(255,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 53%, rgba(255,255,255,0) 0) 0 0,
+radial-gradient(circle closest-side, #FFFFFF 50%, rgba(255,255,255,0) 0) 55px 0 #48B;
+background-size:110px 200px;
+background-repeat:repeat-x;
+}
+
+main {
+	
+	position: relative;
+	margin: 0 auto;
+	margin-top: 10em;
+	padding: 10em 20em;
+	max-width: 23em;
+	background: hsla(0,0%,100%,.30) border-box;
+	overflow: hidden;
+	border-radius: .6em;
+	box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset,
+	            0 .5em 1em rgba(0, 0, 0, 0.6);
+	text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
+}
+
+main::before {
+	content: '';
+	position: absolute;
+	top: 0; right:  0; bottom: 0; left: 0;
+	margin-top: 10em;
+	z-index: -1;
+	-webkit-filter: blur(80px);
+	filter: blur(80px);
+}
+
+blockquote { font-style: italic,white; }
+blockquote cite { font-style: normal; }
+
+.box1,.box2,.box3,.box4,.box5,.box6{
+	width: 10em;
+	height: 5em;
+	line-height:5em;
+	text-align: center;
+	flex-direction:column;
+	  display: -webkit-flex; /* Safari */
+  	display:inline-flex;
+  	flex-wrap: wrap-reverse;
+	justify-content: flex-start;
+	margin-bottom: 30px;
+	 
+}
+.box1{
+	background:  linear-gradient(-45deg, transparent 60px, #fffc1c 0);
+}
+.box2{
+	background:
+       linear-gradient(-45deg, transparent 15px, #fffc1c 0)
+        right,
+       linear-gradient(45deg, transparent 15px, #fffc1c 0)
+        left;
+	background-size: 50% 100%;
+	background-repeat: no-repeat;
+}
+.box3{
+	background:
+      linear-gradient(-135deg, transparent 30px, #fffc1c 0)
+        top right,
+       linear-gradient(0deg, transparent 0px, #fffc1c 0)
+        top left,
+        linear-gradient(-45deg, transparent 30px, #fffc1c 0)
+        bottom right,
+       linear-gradient(0deg, transparent 0px, #fffc1c 0)
+        bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+}
+.box4,.box5,.box6{
+	background:
+      linear-gradient(-135deg, transparent 30px, #fffc1c 0)
+        top right,
+       linear-gradient(135deg, transparent 30px, #fffc1c 0)
+        top left,
+        linear-gradient(-45deg, transparent 30px, #fffc1c 0)
+        bottom right,
+       linear-gradient(45deg, transparent 30px, #fffc1c 0)
+        bottom left;
+	background-size: 50% 50%;
+	background-repeat: no-repeat;
+}
