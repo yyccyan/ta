@@ -19,7 +19,7 @@ main {
 	margin: 0 auto;
 	margin-top: 10em;
 	padding: 10em 20em;
-	max-width: 23em;
+	max-width: 40em;
 	background: hsla(0,0%,100%,.30) border-box;
 	overflow: hidden;
 	border-radius: .6em;
@@ -34,8 +34,8 @@ main::before {
 	top: 0; right:  0; bottom: 0; left: 0;
 	margin-top: 10em;
 	z-index: -1;
-	-webkit-filter: blur(80px);
-	filter: blur(80px);
+	-webkit-filter: blur(90px);
+	filter: blur(90px);
 }
 
 blockquote { font-style: italic,white; }
